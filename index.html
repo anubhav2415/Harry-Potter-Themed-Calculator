@@ -1,0 +1,46 @@
+<!-- HTML Structure -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> <!-- Floating stars background -->
+    <div class="stars-container" id="starsContainer"></div> <!-- Calculator container -->
+    <div class="calculator-wrapper">
+        <div class="calculator"> <!-- Header -->
+            <div class="header">
+                <h1>⚡ Arithmancy Calculator ⚡</h1>
+                <p>Hermione's Favorite Tool</p>
+            </div> <!-- Display -->
+            <div class="display">
+                <div id="displayValue" class="display-value">0</div>
+            </div> <!-- Buttons -->
+            <div class="buttons"> <button class="btn btn-clear span-2" onclick="handleClear()">C</button> <button
+                    class="btn btn-operator" onclick="handleOperation('÷')">÷</button> <button class="btn btn-operator"
+                    onclick="handleOperation('×')">×</button> <button class="btn btn-number"
+                    onclick="handleNumber(7)">7</button> <button class="btn btn-number"
+                    onclick="handleNumber(8)">8</button> <button class="btn btn-number"
+                    onclick="handleNumber(9)">9</button> <button class="btn btn-operator"
+                    onclick="handleOperation('-')">-</button> <button class="btn btn-number"
+                    onclick="handleNumber(4)">4</button> <button class="btn btn-number"
+                    onclick="handleNumber(5)">5</button> <button class="btn btn-number"
+                    onclick="handleNumber(6)">6</button> <button class="btn btn-operator"
+                    onclick="handleOperation('+')">+</button> <button class="btn btn-number"
+                    onclick="handleNumber(1)">1</button> <button class="btn btn-number"
+                    onclick="handleNumber(2)">2</button> <button class="btn btn-number"
+                    onclick="handleNumber(3)">3</button> <button class="btn btn-equals span-row-2"
+                    onclick="handleEquals()">=</button> <button class="btn btn-number span-2"
+                    onclick="handleNumber(0)">0</button> <button class="btn btn-number"
+                    onclick="handleDecimal()">.</button> </div> <!-- Footer -->
+            <div class="footer"> "Numbers aren't everything, but they're quite helpful!" - Hermione </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
